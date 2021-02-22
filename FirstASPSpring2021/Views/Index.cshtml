@@ -1,0 +1,10 @@
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Hello, world!</h1>
+
+@foreach(var song in ViewBag.ListOfSongs)
+{
+    @song.ToString()
+}

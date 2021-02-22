@@ -1,0 +1,11 @@
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/bin/Debug/netcoreapp3.1/1
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/bin/Debug/netcoreapp3.1/1.deps.json
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/bin/Debug/netcoreapp3.1/1.runtimeconfig.json
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/bin/Debug/netcoreapp3.1/1.runtimeconfig.dev.json
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/bin/Debug/netcoreapp3.1/1.dll
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/bin/Debug/netcoreapp3.1/1.pdb
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/obj/Debug/netcoreapp3.1/1.csprojAssemblyReference.cache
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/obj/Debug/netcoreapp3.1/1.AssemblyInfoInputs.cache
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/obj/Debug/netcoreapp3.1/1.AssemblyInfo.cs
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/obj/Debug/netcoreapp3.1/1.dll
+/home/taxborn/Documents/Code/C#/CIS-122/02042021-PracticeProblems/1/obj/Debug/netcoreapp3.1/1.pdb
