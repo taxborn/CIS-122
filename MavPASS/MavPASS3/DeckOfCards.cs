@@ -30,13 +30,25 @@ namespace MavPASS3
             this.Brand = brand;
             this.Cards = cards;
         }
-        
+
         // Our methods
+        public string GetCards()
+        {
+            string output = "";
+
+            foreach (var card in this.Cards)
+            {
+                output += "\t" + card.ToString() + "\n";
+            }
+
+            return output;
+        }
+
         public override string ToString()
         {
             string classString = 
                 "Brand: " + this.Brand + "\n" +
-                "Cards: " + this.Cards;
+                "Cards: \n" + GetCards();
 
             return classString;
         }

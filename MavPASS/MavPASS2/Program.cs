@@ -7,12 +7,25 @@ using System.Collections.Generic;
 
 namespace MavPASS2
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("MavPASS: 2");
+            Key aKey1 = new Key("a");
+            Key aKey2 = new Key("b");
+            Key aKey3 = new Key("c");
 
+            List<Key> myKeys = new List<Key>();
+
+            myKeys.Add(aKey1);
+            myKeys.Add(aKey2);
+            myKeys.Add(aKey3);
+
+            Keyboard myKeyboard = new Keyboard("Logitech", "QWERTY", myKeys);
+
+            Console.WriteLine(myKeyboard.ToString());
+
+            Console.WriteLine("Press any key to continue..");
             Console.ReadKey();
         }
     }

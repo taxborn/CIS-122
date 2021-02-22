@@ -17,18 +17,23 @@ namespace MavPASS2
         // 2nd: Getters and setters / properties
         public string Character
         {
-            get
-            {
-                return this.character;
-            }
-
-            set
-            {
-                this.character = value;
-            }
+            get => this.character;
+            set => this.character = value;
         }
 
         // 3rd: Constructor
+        public Key(string character)
+        {
+            this.Character = character;
+        }
+
         // 4th: Methods / ToString
+        public override string ToString()
+        {
+            string classString =
+                "Key: " + this.Character;
+
+            return classString;
+        }
     } 
 }

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace MavPASS2p1
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -15,7 +15,6 @@ namespace MavPASS2p1
             Card three = new Card("spades", "3");
             Card four = new Card("spades", "4");
             
-            Console.WriteLine(ace.ToString());
             // Create a list out of our cards
             List<Card> cards = new List<Card>();
 
@@ -29,6 +28,7 @@ namespace MavPASS2p1
 
             Console.WriteLine(deck.ToString());
 
+            Console.WriteLine("Press any key to continue..");
             Console.ReadKey();
         }
     }

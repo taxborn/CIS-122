@@ -15,28 +15,14 @@ namespace MavPASS2p1
         // Our getters and setters
         public string Suit
         {
-            get
-            {
-                return this.suit;
-            }
-
-            set
-            {
-                this.suit = value;
-            }
+            get => this.suit;
+            set => this.suit = value;
         }
 
         public string FaceValue
         {
-            get
-            {
-                return this.faceValue;
-            }
-
-            set
-            {
-                this.faceValue = value;
-            }
+            get => this.faceValue;
+            set => this.faceValue = value;
         }
 
         // Our constructor
@@ -50,8 +36,8 @@ namespace MavPASS2p1
         public override string ToString()
         {
             string classString =
-                "Suit: " + this.Suit + "\n" +
-                "Value: " + this.FaceValue;
+                "Suit: " + this.Suit +
+                " | Value: " + this.FaceValue;
 
             return classString;
         }

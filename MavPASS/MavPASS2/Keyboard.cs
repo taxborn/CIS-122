@@ -1,7 +1,7 @@
 // Created by: Braxton Fair
 // Created on: 01/25/2021
 using System;
-using System.Collecitions.Generic;
+using System.Collections.Generic;
 
 namespace MavPASS2
 {
@@ -15,41 +15,20 @@ namespace MavPASS2
         // getters and setters
         public string Brand
         {
-            get
-            {
-                return this.brand;
-            }
-
-            set
-            {
-                this.brand = value; // Updates brand with the new value
-            }
+            get => this.brand;
+            set => this.brand = value;
         }
 
         public string Layout
         {
-            get
-            {
-                return this.layout;
-            }
-
-            set
-            {
-                this.layout = value;
-            }
+            get => this.layout;
+            set => this.layout = value;
         }
     
         public List<Key> Keys
         {
-            get
-            {
-                return this.keys;
-            }
-
-            set
-            {
-                this.keys = value;
-            }
+            get => this.keys;
+            set => this.keys = value;
         }
 
         // The constructor for the class
@@ -60,13 +39,26 @@ namespace MavPASS2
             this.Keys = keys;
         }
 
+
         // The other methods
-        public string override ToString()
+        public string ListKeys()
+        {
+            string output = "";
+
+            foreach (var key in this.Keys)
+            {
+                output += "\t" + key.ToString() + "\n";
+            }
+
+            return output;
+        }
+
+        public override string ToString()
         {
             string classString = 
                 "Brand: " + this.Brand + "\n" +
                 "Layout: " + this.Layout + "\n" +
-                "Keys: " + this.Keys;
+                "Keys: \n" + ListKeys();
 
             return classString;
         }

@@ -14,28 +14,18 @@ namespace MavPASS2p1
         // Our getters and setters
         public string Brand
         {
-            get
-            {
-                return this.brand;
-            }
-
-            set
-            {
-                this.brand = value;
-            }
+            get => this.brand;
+            set => this.brand = value;
         }
 
         public List<Card> Cards
         {
-            get => return this.cards;
-            set
-            {
-                this.cards = value;
-            }
+            get => this.cards;
+            set => this.cards = value;
         }
 
         // Our constructor
-        public DeckOfCards(string brand = "Test", List<Card> cards)
+        public DeckOfCards(string brand, List<Card> cards)
         {
             this.Brand = brand;
             this.Cards = cards;
@@ -43,12 +33,11 @@ namespace MavPASS2p1
 
         public string GetCards()
         {
-            string message = "A: ";
+            string message = "";
 
             foreach (var card in this.Cards)
             {
-                message += card.ToString();
-                message += "\n"; 
+                message += "\t" + card.ToString() + "\n";
             }
 
             return message;
@@ -59,7 +48,7 @@ namespace MavPASS2p1
         {
             string classString = 
                 "Brand: " + this.Brand + "\n" +
-                "Cards: " + this.GetCards();
+                "Cards: \n" + this.GetCards();
 
             return classString;
         }
