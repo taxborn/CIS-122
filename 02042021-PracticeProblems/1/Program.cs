@@ -28,11 +28,11 @@ namespace _1
         {
             Console.WriteLine("Enter the number of days to convert.");
 
-            int days = Convert.ToInt32(Console.ReadLine());
-
-            Converter ourConverter = new Converter(days);
-
+            Converter ourConverter = new Converter(Convert.ToInt32(Console.ReadLine()));
             Console.WriteLine(ourConverter);
+ 
+            Converter ourConverter1 = new Converter();
+            Console.WriteLine("\n------\nDefault constructor:\n" + ourConverter1);
 
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
