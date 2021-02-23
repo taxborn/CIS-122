@@ -23,9 +23,9 @@ namespace InheritancePractice
         }
 
         // our constructor
-        public RetailWorker(string jobid, bool fired, string location, string brand)
+        public RetailWorker(string jobId, bool fired, string location, string brand)
         {
-            this.JobID = jobid;
+            this.JobID = jobId;
             this.IsFired = fired;
             this.StoreLocation = location;
             this.BrandName = brand;
@@ -35,8 +35,11 @@ namespace InheritancePractice
         public override string ToString()
         {
             string classString =
-                "Location: " + this.StoreLocation + "\n" +
-                "Brand: " + this.BrandName;
+                "ID: " + this.JobID + "\n" +
+                "Fired: " + this.IsFired + "\n" +
+                "--------\n" +
+                "\tLocation: " + this.StoreLocation + "\n" +
+                "\tBrand: " + this.BrandName;
 
             return classString;
         }

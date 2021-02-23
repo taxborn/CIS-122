@@ -6,7 +6,7 @@ namespace InheritancePractice
     public abstract class Job
     {
         // our private variables
-        private string jobID = "na"; 
+        private string jobID = "n/a"; 
         private bool isFired = false;
 
         // our gets and sets
@@ -23,14 +23,16 @@ namespace InheritancePractice
         }
 
         // our constructor
-        // we don't use constructors so we can 
-        /*public Job(): this("123", false) {}
+        // Constructors are not inherited, so these are mostly useless
+        
+        public Job(): this("123", false) {}
 
         public Job(string job, bool fired)
         {
             this.JobID = job;
             this.IsFired = fired;
-        }*/
+        }
+        
         // our methods
         public override string ToString()
         {

@@ -1,5 +1,5 @@
 // Created by: Braxton Fair
-// Created on: 02/21/2021
+// Created on: 02/22/2021
 
 namespace InheritancePractice
 {
@@ -35,9 +35,11 @@ namespace InheritancePractice
         public override string ToString()
         {
             string classString = 
-                "Location: " + this.Location + "\n" +
                 "ID: " + this.JobID + "\n" +
-                "Crop: " + this.Crop;
+                "Fired: " + this.IsFired + "\n" +
+                "--------\n" + 
+                "\tLocation: " + this.Location + "\n" +
+                "\tCrop: " + this.Crop;
 
             return classString;
         }
