@@ -5,6 +5,8 @@ namespace _1
 {
     public class Converter
     {
+        // Our constant variables
+        public const int HoursInADay = 24, MinutesInAnHour = 60, SecondsInAMinute = 60;
         // our gets and sets
         public int Days { get; set; }
 
@@ -13,11 +15,11 @@ namespace _1
         public Converter(int days) => Days = days;
 
         // our other methods
-        public int ToHours() => this.Days * 24;
+        public int ToHours() => this.Days * HoursInADay;
 
-        public int ToMinutes() => this.ToHours() * 60;
+        public int ToMinutes() => this.ToHours() * MinutesInAnHour;
 
-        public int ToSeconds() => this.ToMinutes() * 60;
+        public int ToSeconds() => this.ToMinutes() * SecondsInAMinute;
 
         public override string ToString() => $"{this.Days} days equals\n{this.ToHours()} hours\n{this.ToMinutes()} minutes\n{this.ToSeconds()} seconds";
     }
