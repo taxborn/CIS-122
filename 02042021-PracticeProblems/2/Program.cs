@@ -31,6 +31,9 @@ namespace _2
     {
         public static void Main(string[] args)
         {
+            Legs numberOfLegs = new Legs(2, 3, 10, 6, 4, 2, 2); 
+
+            Console.WriteLine(numberOfLegs.ToString());
             
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
